@@ -1,0 +1,4 @@
+@mixin linear-gradient($color-stop1, $color-stop2) {
+  background: $color-stop1;
+  background: url('../images/cross-stripes.png'), linear-gradient(90deg, $color-stop1, $color-stop2);
+}

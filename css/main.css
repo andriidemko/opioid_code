@@ -1,0 +1,35 @@
+#homepage {
+   background-image: url("../images/background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: auto;
+}
+
+#homepage h1 {
+  margin-top: 3em;
+  font-size: 4em;
+  color: white;
+}
+
+#footer p {
+  color: #999;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+.input-group {
+  padding: 75px;
+}

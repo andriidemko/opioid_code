@@ -1,0 +1,29 @@
+@import '_colors.scss';
+@import '_fonts.scss';
+@import '_mixins.scss';
+
+// Your CSS/SCSS below this line
+
+$defaultmargin: 15px;
+
+body {
+  font-family: $body, $body-fb;
+  @include linear-gradient ($background-grad-1, $background-grad-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline, $headline-fb;
+}
+
+.col {
+  margin: $defaultmargin;
+}
+
+h1 {
+  font-size: $headline-font-size;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
