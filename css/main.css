@@ -1,4 +1,4 @@
-#homepage {
+body {
    background-image: url("../images/background.jpg");
    background-position: center;
    background-repeat: no-repeat;
@@ -32,4 +32,13 @@ h3 {
 
 .input-group {
   padding: 75px;
+}
+
+.col {
+  margin: 20px;
+}
+
+.three-quaters {
+  width: 75%;
+  margin: 0 auto;
 }
