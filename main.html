@@ -15,6 +15,39 @@
   <body>
     <!-- Our Code Starts Here -->
 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/logo_white.png" class="logo_white"></a>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Enter Your ZIP Code" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">See Results</button>
+          </form>
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#map">Heat Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#dynamic">US Opioid Dynamic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#awerness">Raise Awerness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#help">Here's How You Can Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <section>
       <div class="row">
         <div class="col">
@@ -27,24 +60,26 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
+          <img src="images/people.png" class="people" style="float: left">
           <h2>632</h2>
-          <p>People overdosed in your area in 2017</p>
+          <h4>People overdosed in your area in 2017</h4>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
         </div>
       </div>
     </section>
 
-      <section>
+      <section id="dynamic">
       <div class="row">
         <div class="col text-center">
-          <h3>Dynamic in the US</h3>
-          <p>1970-2017</p>
-          <img src="images/dynamic_map2.gif">
+          <h3>US Opioid Dynamic</h3>
+
+          <img src="images/map_test.png" class="map_test">
         </div>
       </div>
     </section>
 
-      <section>
-      <div class="row content">
+      <section id="awerness">
+      <div class="row content awarness_txt">
         <div class="col text-center">
           <h3>Raise awareness</h3>
           <p>Lack of awareness leaves issues in the dark – unseen, unknown, un-addressable – leaving those who deal with these very real and very challenging situations in their lives feeling isolated, broken, or like their struggle may never end.</p>
@@ -55,25 +90,69 @@
       </div>
     </section>
 
-      <section>
+      <section id="help">
           <div class="row">
             <div class="col text-center">
               <h3>Here's how you can help</h3>
               <p>We are the Heroin Epidemic Relief Organization. Our mission is to stop the growing heroin epidemic that has rapidly swept across the nation through our own programs and by supporting strategic pieces of legislation all while providing comfort and support to those who have lost a loved one to heroin/opioid or are currently helping a loved one who is struggling with this deadly disease.</p>
-              <img src="images/hero_logo.jpg" alt="Logo">
 
-              <a class="btn btn-primary btn-lg" href="https://www.paypal.com/donate/?token=Nt2M4-y8-cTzzaI0ckCtAvnh9JV5qysALeyA9oAu9dm0DM4XyQUsY6okC5VD0jAgbYkO_W&country.x=US&locale.x=US" role="button">Donate</a>
+              </div>
+
+
             </div>
           </div>
         </div>
-        </section>
 
-      <div class="row">
-          <div id="footer" class="col text-md-center">
-              <p><a href="index.html">Home</a></p>
-              <p>© Copyrighted, All Rights Reserved</p>
+        <div class="card-deck">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/proact_logo.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary">Visit Website</a>
+            <a href="#" class="btn btn-primary">Donate</a>
           </div>
         </div>
+
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/proact_logo.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary">Visit Website</a>
+            <a href="#" class="btn btn-primary">Donate</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/proact_logo.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary">Visit Website</a>
+            <a href="#" class="btn btn-primary">Donate</a>
+          </div>
+        </div>
+      </div>
+
+        </section>
+
+        <footer>
+          <div class ="contaner text-center"
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">About Us</a>
+                </li>
+              </ul>
+              <p>© Copyrighted, All Rights Reserved</p>
+            </div>
+          </footer>
 
 
     <!-- Our Code Ends Here -->
