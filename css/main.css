@@ -17,10 +17,11 @@
 }
 
 #map {
-  margin-top: 75px;
+  margin-top: 80px;
   width: 100%;
   height: 500px;
   background-color: grey;
+}
 }
 
 h2 {
@@ -55,20 +56,21 @@ section {
   height: 100vh;
 }
 
-.logo_black {
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
+.logo_white_firstpage {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
 }
 
 .logo_white {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
 }
 
 .awarness_txt {
     color: white;
 }
+
 
 #awerness {
    background-image: url("../images/awerness.jpg");
@@ -81,4 +83,25 @@ section {
 .map_test {
   width: 70%;
   height: auto;
+}
+
+
+#mainNav {
+  background-color: white;
+  opacity: .95;
+}
+
+
+
+.index_footer {
+  color: #999;
+}
+
+/* dore */
+.donate_btn {
+  color: white;
+}
+
+.search_butto {
+  float: right;
 }

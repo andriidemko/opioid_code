@@ -19,29 +19,27 @@
         <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/logo_white.png" class="logo_white"></a>
 
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter Your ZIP Code" aria-label="Search">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">See Results</button>
-          </form>
-
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
             <i class="fa fa-bars"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-1 " type="search" placeholder="Enter Your ZIP Code" aria-label="Enter Your ZIP Code">
+            </form>
+            <button class="btn btn-outline-primary my-2 my-sm-0 search_button" type="submit">See Results</button>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#map">Heat Map</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#dynamic">US Opioid Dynamic</a>
+                <a class="nav-link js-scroll-trigger" href="#dynamic">Opioid Dynamic</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#awerness">Raise Awerness</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#help">Here's How You Can Help</a>
+                <a class="nav-link js-scroll-trigger btn btn-primary donate_btn" href="#help">Donate</a>
               </li>
             </ul>
           </div>
@@ -81,12 +79,17 @@
       <section id="awerness">
       <div class="row content awarness_txt">
         <div class="col text-center">
-          <h3>Raise awareness</h3>
-          <p>Lack of awareness leaves issues in the dark – unseen, unknown, un-addressable – leaving those who deal with these very real and very challenging situations in their lives feeling isolated, broken, or like their struggle may never end.</p>
-          <div id="fb-root"></div>
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
-          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fandrii.site&layout=button&size=large&mobile_iframe=true&width=84&height=28&appId" width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-8">
+                  <h3>Raise awareness</h3>
+                  <p>Lack of awareness leaves issues in the dark – unseen, unknown, un-addressable – leaving those who deal with these very real and very challenging situations in their lives feeling isolated, broken, or like their struggle may never end.</p>
+                  <div id="fb-root"></div>
+                  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
+                  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fandrii.site&layout=button&size=large&mobile_iframe=true&width=84&height=28&appId" width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -138,7 +141,7 @@
         </section>
 
         <footer>
-          <div class ="contaner text-center"
+          <div class ="contaner text-center">
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a href="#">Privacy</a>

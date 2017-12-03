@@ -1,7 +1,25 @@
-// google maps //
+
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 75)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+// google maps
 
 var heatmapData = [
-  new google.maps.LatLng(37.782, -122.447),
+  new google.maps.LatLng(40.021472, -75.193627),
+    new google.maps.LatLng(40.021472, -75.193627),
+      new google.maps.LatLng(40.021472, -75.193627),
   new google.maps.LatLng(37.782, -122.445),
   new google.maps.LatLng(37.782, -122.443),
   new google.maps.LatLng(37.782, -122.441),
@@ -17,12 +35,12 @@ var heatmapData = [
   new google.maps.LatLng(37.785, -122.435)
 ];
 
-var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
+var philadelphia = new google.maps.LatLng(40.035838, -75.174734);
 
 map = new google.maps.Map(document.getElementById('map'), {
-  center: sanFrancisco,
-  zoom: 13,
-  mapTypeId: 'satellite'
+  center: philadelphia,
+  zoom: 14,
+  mapTypeId: 'roadmap'
 });
 
 var heatmap = new google.maps.visualization.HeatmapLayer({
@@ -30,7 +48,7 @@ var heatmap = new google.maps.visualization.HeatmapLayer({
 });
 heatmap.setMap(map);
 
-// twiter //
+// twiter
 
 window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
