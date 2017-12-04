@@ -1,6 +1,6 @@
 
 
-  // Smooth scrolling using jQuery easing
+// Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -16,37 +16,50 @@
 
 // google maps
 
-var heatmapData = [
-  new google.maps.LatLng(40.021472, -75.193627),
-    new google.maps.LatLng(40.021472, -75.193627),
-      new google.maps.LatLng(40.021472, -75.193627),
-  new google.maps.LatLng(37.782, -122.445),
-  new google.maps.LatLng(37.782, -122.443),
-  new google.maps.LatLng(37.782, -122.441),
-  new google.maps.LatLng(37.782, -122.439),
-  new google.maps.LatLng(37.782, -122.437),
-  new google.maps.LatLng(37.782, -122.435),
-  new google.maps.LatLng(37.785, -122.447),
-  new google.maps.LatLng(37.785, -122.445),
-  new google.maps.LatLng(37.785, -122.443),
-  new google.maps.LatLng(37.785, -122.441),
-  new google.maps.LatLng(37.785, -122.439),
-  new google.maps.LatLng(37.785, -122.437),
-  new google.maps.LatLng(37.785, -122.435)
-];
+      function initMap() {
 
-var philadelphia = new google.maps.LatLng(40.035838, -75.174734);
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: {lat: 40.0358384, lng: -75.174734}
+              });
 
-map = new google.maps.Map(document.getElementById('map'), {
-  center: philadelphia,
-  zoom: 14,
-  mapTypeId: 'roadmap'
-});
+              // Create an array of alphabetical characters used to label the markers.
+              var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-var heatmap = new google.maps.visualization.HeatmapLayer({
-  data: heatmapData
-});
-heatmap.setMap(map);
+              // Add some markers to the map.
+              // Note: The code uses the JavaScript Array.prototype.map() method to
+              // create an array of markers based on a given "locations" array.
+              // The map() method here has nothing to do with the Google Maps API.
+              var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                  position: location,
+                  label: labels[i % labels.length]
+                });
+              });
+
+              // Add a marker clusterer to manage the markers.
+              var markerCluster = new MarkerClusterer(map, markers,
+                  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+            }
+            var locations = [
+              {lat: 40.047799, lng: -75.173092},
+              {lat: 40.020223, lng: -75.183520},
+              {lat: 40.021118, lng: -75.171804},
+              {lat: 40.02959, lng: -75.186095},
+              {lat: 40.032319, lng: -75.193648},
+              {lat: 40.028047, lng: -75.169358},
+              {lat: 40.029493, lng: -75.208669},
+              {lat: 40.032620, lng: -75.135841},
+              {lat: 40.026902, lng: -75.147686},
+              {lat: 40.039520, lng: -75.151978},
+              {lat: 40.043725, lng: -75.177298},
+              {lat: 40.044316, lng: -75.137043},
+              {lat: 40.039744, lng: -75.172405},
+              {lat: 40.038731, lng: -75.160990},
+              {lat: 40.038205, lng: -75.168800},
+              {lat: 40.044448, lng: -75.175152},
+            ]
+
 
 // twiter
 

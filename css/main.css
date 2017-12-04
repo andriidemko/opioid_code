@@ -1,9 +1,29 @@
+* {
+  border: 1px solid red;
+}
+
 #index {
    background-image: url("../images/background.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    height: auto;
+}
+
+#philadelphia {
+   background-image: url("../images/philadelphia.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vp;
+}
+
+#dynamic {
+   background-image: url("../images/map_test.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vp;
 }
 
 #homepage h1 {
@@ -17,7 +37,7 @@
 }
 
 #map {
-  margin-top: 80px;
+  margin-top: 100px;
   width: 100%;
   height: 500px;
   background-color: grey;
@@ -25,7 +45,11 @@
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 200px;
+}
+
+#people_overdosed h2 {
+    font-size: 200px;
 }
 
 h3 {
@@ -100,8 +124,4 @@ section {
 /* dore */
 .donate_btn {
   color: white;
-}
-
-.search_butto {
-  float: right;
 }
