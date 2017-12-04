@@ -1,6 +1,4 @@
-* {
-  border: 1px solid red;
-}
+
 
 #index {
    background-image: url("../images/background.jpg");
@@ -71,7 +69,7 @@ h3 {
 
 
 section .content {
-  height: 90vh;
+  height: 100vh;
   display: table-cell;
   vertical-align: middle;
 }
