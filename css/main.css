@@ -16,12 +16,16 @@
    height: 100vp;
 }
 
-#dynamic {
-   background-image: url("../images/map_test.png");
+#awerness {
+   background-image: url("../images/awerness.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vp;
+   height: auto;
+}
+
+#us_overdosed {
+  background-color: #ccc;
 }
 
 #homepage h1 {
@@ -40,14 +44,24 @@
   height: 500px;
   background-color: grey;
 }
+
+
+#mainNav {
+  background-color: white;
+  opacity: .95;
+}
+
+
+#neighborhood_stats  h2 {
+    font-size: 100px;
+}
+
+#us_stats h2 {
+    font-size: 100px;
 }
 
 h2 {
   font-size: 200px;
-}
-
-#people_overdosed h2 {
-    font-size: 200px;
 }
 
 h3 {
@@ -58,20 +72,15 @@ h3 {
   padding: 75px;
 }
 
-.col {
-  margin: 20px;
-}
-
 .three-quaters {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 
 
+
 section .content {
   height: 100vh;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 section {
@@ -93,33 +102,23 @@ section {
     color: white;
 }
 
-
-#awerness {
-   background-image: url("../images/awerness.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: auto;
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
+
 
 .map_test {
   width: 70%;
   height: auto;
 }
 
-
-#mainNav {
-  background-color: white;
-  opacity: .95;
-}
-
-
-
 .index_footer {
   color: #999;
 }
 
-/* dore */
-.donate_btn {
-  color: white;
+
+
+footer {
+  margin-top: 75px;
 }

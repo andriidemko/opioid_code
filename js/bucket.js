@@ -1,5 +1,3 @@
-
-
 // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -7,14 +5,14 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 75)
+          scrollTop: (target.offset().top - 0)
         }, 1000, "easeInOutExpo");
         return false;
       }
     }
   });
 
-// google maps
+// Google Maps
 
       function initMap() {
 
@@ -23,13 +21,8 @@
                 center: {lat: 40.0358384, lng: -75.174734}
               });
 
-              // Create an array of alphabetical characters used to label the markers.
               var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-              // Add some markers to the map.
-              // Note: The code uses the JavaScript Array.prototype.map() method to
-              // create an array of markers based on a given "locations" array.
-              // The map() method here has nothing to do with the Google Maps API.
               var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                   position: location,
@@ -37,7 +30,6 @@
                 });
               });
 
-              // Add a marker clusterer to manage the markers.
               var markerCluster = new MarkerClusterer(map, markers,
                   {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
             }
@@ -61,7 +53,7 @@
             ]
 
 
-// twiter
+// Twiter
 
 window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
