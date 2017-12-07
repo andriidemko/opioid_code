@@ -1,4 +1,35 @@
 
+.numberCircle {
+    width: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    color: white;
+    background-color: #b21a1a;
+    margin: auto;
+}
+
+
+.card1 {
+  width: auto;
+  height: 125px;
+  max-width: 100%;
+}
+
+.card2 {
+  width: auto;
+  height: 125px;
+  max-width: 100%;
+}
+
+.card3 {
+  width: auto;
+  height: 125px;
+  max-width: 100%;
+}
+
+.card {
+  border: none;
+}
 
 #index {
    background-image: url("../images/background.jpg");
@@ -16,7 +47,7 @@
    height: 100vp;
 }
 
-#awerness {
+#awarness {
    background-image: url("../images/awerness.jpg");
    background-position: center;
    background-repeat: no-repeat;
@@ -48,7 +79,7 @@
 
 #mainNav {
   background-color: white;
-  opacity: .95;
+  opacity: .96;
 }
 
 
