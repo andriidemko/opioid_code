@@ -1,3 +1,65 @@
+/* index.html */
+
+#index {
+   background-image: url("../images/background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: auto;
+}
+
+.logo_white_big {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#homepage h1 {
+  margin-top: 1em;
+  font-size: 4em;
+  color: white;
+}
+
+.three-quaters {
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 75px;
+  color: #999;
+}
+
+/* main.html */
+
+.logo_white_small {
+    width: 75px;
+    height: 75px;
+}
+
+#mainNav {
+  background-color: white;
+  opacity: .95;
+}
+
+#map {
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+}
+
+section .content {
+  height: 100vh;
+}
+
+#neighborhood_stats h2 {
+    font-size: 100px;
+}
+
+#us_stats h2 {
+    font-size: 100px;
+}
 
 .numberCircle {
     width: 150px;
@@ -8,89 +70,6 @@
     margin: auto;
 }
 
-
-.card1 {
-  width: auto;
-  height: 125px;
-  max-width: 100%;
-}
-
-.card2 {
-  width: auto;
-  height: 125px;
-  max-width: 100%;
-}
-
-.card3 {
-  width: auto;
-  height: 125px;
-  max-width: 100%;
-}
-
-.card {
-  border: none;
-}
-
-#index {
-   background-image: url("../images/background.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: auto;
-}
-
-#philadelphia {
-   background-image: url("../images/philadelphia.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 100vp;
-}
-
-#awarness {
-   background-image: url("../images/awerness.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: auto;
-}
-
-#us_overdosed {
-  background-color: #ccc;
-}
-
-#homepage h1 {
-  margin-top: 1em;
-  font-size: 4em;
-  color: white;
-}
-
-#footer p {
-  color: #999;
-}
-
-#map {
-  margin-top: 100px;
-  width: 100%;
-  height: 500px;
-  background-color: grey;
-}
-
-
-#mainNav {
-  background-color: white;
-  opacity: .96;
-}
-
-
-#neighborhood_stats  h2 {
-    font-size: 100px;
-}
-
-#us_stats h2 {
-    font-size: 100px;
-}
-
 h2 {
   font-size: 200px;
 }
@@ -99,38 +78,20 @@ h3 {
   font-size: 60px;
 }
 
-.input-group {
-  padding: 75px;
+#awarness {
+   background-image: url("../images/awerness.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: auto;
+   color: white;
 }
 
-.three-quaters {
-  width: 50%;
-  margin: 0 auto;
-}
-
-
-
-section .content {
-  height: 100vh;
-}
-
-section {
-  height: 100vh;
-}
-
-.logo_white_firstpage {
-    margin-top: 30px;
-    width: 100px;
-    height: 100px;
-}
-
-.logo_white {
-    width: 75px;
-    height: 75px;
-}
-
-.awarness_txt {
-    color: white;
+iframe {
+  width: 84px;
+  height: 28px;
+  border: none;
+  overflow: hidden;
 }
 
 .vertical-align {
@@ -138,18 +99,12 @@ section {
     align-items: center;
 }
 
-
-.map_test {
-  width: 70%;
-  height: auto;
+.card-img-top {
+  width: auto;
+  height: 125px;
+  max-width: 100%;
 }
 
-.index_footer {
-  color: #999;
-}
-
-
-
-footer {
-  margin-top: 75px;
+.card {
+  border: none;
 }
